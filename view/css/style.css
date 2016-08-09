@@ -1,0 +1,85 @@
+/**
+ * Created by PhpStorm.
+ */
+
+#wrapper {
+    width: 960px;
+    position: relative;
+    margin: 0 auto;
+    line-height: 10px;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: darkolivegreen;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: lightseagreen
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.right_container {
+    position: inherit;
+    float: right;
+    width: 80%;
+    border-style: solid;
+    border-width: thin;
+    text-align: center;
+}
+
+.left_container {
+    position: fixed;
+    float: left;
+    width: 20%;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/* If in mobile screen with maximum width 479px. The iPhone screen resolution is 320x480 px (except iPhone4, 640x960) */
+@media only screen and (max-width: 479px) {
+    #wrapper {
+        width: 90%;
+    }
+}
